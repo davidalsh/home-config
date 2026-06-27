@@ -26,7 +26,9 @@ return {
     },
   },
   opts = {
-    close_if_last_window = true,
+    -- Keep the tree open when you :q the last file window, so you land back in
+    -- the tree (which then fills the whole screen) instead of quitting Neovim.
+    close_if_last_window = false,
     enable_git_status = true,
     enable_diagnostics = true,
     default_component_configs = {
