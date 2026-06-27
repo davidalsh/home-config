@@ -2,4 +2,5 @@
 -- Lives in ~/home-config/nvim, symlinked to ~/.config/nvim
 
 require("config.options")
+require("config.keymaps")
 require("config.lazy")
