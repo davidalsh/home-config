@@ -9,7 +9,7 @@ return {
     -- Options must be set BEFORE :colorscheme
     vim.g.gruvbox_material_background = "soft"      -- "hard" | "medium" | "soft"
     vim.g.gruvbox_material_foreground = "material"  -- "material" | "mix" | "original" (material = softest)
-    vim.g.gruvbox_material_enable_italic = true
+    vim.g.gruvbox_material_enable_italic = false  -- no italic keywords (def/class/etc.)
     vim.g.gruvbox_material_better_performance = 1
 
     vim.cmd.colorscheme("gruvbox-material")
