@@ -24,13 +24,23 @@ return {
   },
   config = function()
     local telescope = require("telescope")
+    local actions = require("telescope.actions")
     telescope.setup({
       defaults = {
         mappings = {
           i = {
             -- navigate results with Ctrl-j / Ctrl-k while typing
-            ["<C-j>"] = "move_selection_next",
-            ["<C-k>"] = "move_selection_previous",
+            ["<C-j>"] = actions.move_selection_next,
+            ["<C-k>"] = actions.move_selection_previous,
+          },
+        },
+      },
+      pickers = {
+        buffers = {
+          mappings = {
+            -- close the highlighted buffer from the <leader>fb list
+            i = { ["<C-d>"] = actions.delete_buffer },
+            n = { ["d"] = actions.delete_buffer },
           },
         },
       },
