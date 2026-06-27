@@ -1,0 +1,33 @@
+theme = Ayu
+
+cursor-style = block
+
+# Ghostty's shell integration enables a "cursor" feature by default that forces
+# a bar cursor at the prompt, overriding cursor-style. Disable just that feature
+# (keep title + working-directory reporting) so the block cursor is respected.
+shell-integration-features = no-cursor,title,path
+
+macos-option-as-alt = true
+
+# Cmd+<number> -> switch tmux windows. Sends the tmux prefix (Ctrl-b = \x02)
+# followed by the digit, i.e. the same as pressing "C-b <n>". Both the logical
+# (super+N) and physical (super+digit_N) triggers are overridden so Ghostty's
+# native Cmd+number tab switching doesn't fire instead.
+keybind = super+1=text:\x021
+keybind = super+digit_1=text:\x021
+keybind = super+2=text:\x022
+keybind = super+digit_2=text:\x022
+keybind = super+3=text:\x023
+keybind = super+digit_3=text:\x023
+keybind = super+4=text:\x024
+keybind = super+digit_4=text:\x024
+keybind = super+5=text:\x025
+keybind = super+digit_5=text:\x025
+keybind = super+6=text:\x026
+keybind = super+digit_6=text:\x026
+keybind = super+7=text:\x027
+keybind = super+digit_7=text:\x027
+keybind = super+8=text:\x028
+keybind = super+digit_8=text:\x028
+keybind = super+9=text:\x029
+keybind = super+digit_9=text:\x029

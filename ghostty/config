@@ -1,0 +1,3 @@
+# Make Shift+Enter insert a newline instead of submitting
+# (needed for Claude Code / other TUIs, since Ghostty isn't covered by /terminal-setup)
+keybind = shift+enter=text:\n
