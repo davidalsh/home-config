@@ -42,3 +42,4 @@ def run(argv: list[str] | None = None) -> int:
 
     storage.save(tasks)
     return 0
+
