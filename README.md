@@ -9,6 +9,8 @@
 | `Space` `f` `g` | Search text in project (grep) |
 | `Space` `f` `b` | Open buffers |
 | `Space` `f` `e` | Folder browser |
+| `Space` `e` | File tree on the left (toggle) |
+| `Space` `o` | Toggle focus: tree ↔ file |
 | `Space` `f` `r` | Recent files |
 | `Space` `f` `w` | Search word under cursor |
 | `Space` `f` `h` | Search help |
