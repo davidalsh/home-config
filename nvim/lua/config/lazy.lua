@@ -25,6 +25,6 @@ require("lazy").setup({
     { import = "plugins" },
   },
   -- Theme used by lazy's own install/update UI on first run
-  install = { colorscheme = { "dracula", "habamax" } },
+  install = { colorscheme = { "gruvbox-material", "habamax" } },
   checker = { enabled = false }, -- don't auto-check for plugin updates
 })
